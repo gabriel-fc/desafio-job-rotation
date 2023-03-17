@@ -35,4 +35,20 @@ public class Exercises {
         }
         return String.format(output, number, "não");
     }
+
+    public static String question5(String str){
+        StringBuffer buffer = new StringBuffer(str);
+        int length = str.length();
+        int lastIndex = length-1;
+        for(int i = 0; i < length/2; i++){
+            char aux = buffer.charAt(i);
+            buffer.setCharAt(i, buffer.charAt(lastIndex-i));
+            buffer.setCharAt(lastIndex-i, aux);
+        }
+        return buffer.toString();
+    }
+
+
+
+
 }

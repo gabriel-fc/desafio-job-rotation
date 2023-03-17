@@ -20,4 +20,11 @@ public class ExercisesTest {
         assertEquals(String.format(expectedMessage, 2, "não"), Exercises.question2(2));
         assertEquals(String.format(expectedMessage, 9, "não"), Exercises.question2(9));
     }
+
+    @Test
+    public void testQuestion5(){
+        assertEquals("leirbag", Exercises.question5("gabriel"));
+        assertEquals("edoc", Exercises.question5("code"));
+
+    }
 }
